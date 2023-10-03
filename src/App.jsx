@@ -4,20 +4,17 @@ import './App.css';
 // import List from './components/List';
 // import Content from './components/Content';
 // import Signup from './components/Signup';
-// import Login from './components/Login';
-import Purpose from './components/Purpose'
+import Login from './components/Login';
+// import Dashboard from './components/Dashboard'
+// import Purpose from './components/Purpose'
 
 function App() {
 	return (
 		<div>
-			{/* <Header />
-			<div className='flex'>
-				<List />
-				<Content />
-			</div> */}
+			{/* <Dashboard/> */}
 			{/* <Signup/> */}
-			{/* <Login/> */}
-			<Purpose/>
+			<Login/>
+			{/* <Purpose/> */}
 		</div>
 		
 	);

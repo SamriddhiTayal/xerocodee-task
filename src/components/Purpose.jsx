@@ -1,7 +1,7 @@
 function Purpose(){
   return (
 		<div className="bg-[url('../../public/assets/signup-bg.svg')] h-screen flex items-center justify-center">
-			<div className='flex flex-col items-center   bg-white rounded-3xl h-2/4 w-9/12'>
+			<div className='flex flex-col items-center   bg-white rounded-3xl h-3/4 w-9/12'>
 				<img
 					src='../../public/assets/logo4.png'
 					alt=''
@@ -11,7 +11,7 @@ function Purpose(){
 				<p className='text-sm font-semibold text-slate-500'>
 					Choose From The Following
 				</p>
-				<div className='flex justify-around w-full pt-10'>
+				<div className='flex justify-around w-full pt-16'>
 					<button className='border border-[#C0C0C0] rounded text-[#000022] font-semibold text-base px-16 py-3'>
 						Developer
 					</button>
@@ -24,7 +24,7 @@ function Purpose(){
 				</div>
 				<form
 					action=''
-					className='pt-10'>
+					className='p-20'>
 					<input
 						type='text'
 						placeholder='Organisation Name'

@@ -2,8 +2,8 @@
 import { useState, useEffect } from 'react';
 import { auth, provider } from '../config';
 import { signInWithPopup } from 'firebase/auth';
-// import Dashboard from './Dashboard';
-import Purpose from './Purpose'
+import Dashboard from './Dashboard';
+// import Purpose from './Purpose'
 
 function Login() {
 	const [value, setValue] = useState('');
@@ -19,7 +19,7 @@ function Login() {
 	return (
 		<div>
 			{value ? (
-				<Purpose />
+				<Dashboard />
 			) : (
 				<div className="bg-[url('../../public/assets/signup-bg.svg')] h-screen flex items-center justify-center">
 					<div className='flex items-center justify-center  bg-white rounded-tr-3xl rounded-bl-3xl h-5/6'>
