@@ -1,14 +1,16 @@
+/* eslint-disable react/prop-types */
 import Header from '../components/Header';
 import List from '../components/List';
 import Content from '../components/Content';
 
-function Dashboard() {
+function Dashboard(props) {
+	const name = props.name;
 	return (
 		<div>
 			<Header />
 			<div className='flex'>
 				<List />
-				<Content />
+				<Content name = {name}/>
 			</div>
 		</div>
 	);

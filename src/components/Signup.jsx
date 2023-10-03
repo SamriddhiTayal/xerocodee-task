@@ -11,7 +11,11 @@ function Signup() {
 					/>
 					<div className='flex flex-col items-center p-2 space-y-2'>
 						<h1 className='font-semibold text-3xl'>Hello!</h1>
-						<p className='text-sm text-slate-500'>Create Your Account</p>
+						<div className='flex items-center justify-center space-x-2'>
+							<div className='bg-slate-200 w-16 h-0.5'></div>
+							<p className='text-sm text-slate-500'>Create Your Account</p>
+							<div className='bg-slate-200 w-16 h-0.5'></div>
+						</div>
 					</div>
 					<form
 						action=''
@@ -69,7 +73,8 @@ function Signup() {
 						<button className='text-sm text-[#1F64FF]'> LOGIN </button>
 					</div>
 				</div>
-				<div className='flex flex-col items-center justify-center p-3 h-full border-l-2 relative'>
+				<div className='bg-slate-200 w-0.5 h-3/4'></div>
+				<div className='flex flex-col items-center justify-center p-3 h-full relative'>
 					<img
 						src='/assets/signup-image.svg'
 						alt=''

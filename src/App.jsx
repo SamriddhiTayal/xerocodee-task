@@ -14,11 +14,11 @@ function App() {
 		<div>
 			<Routes>
 				<Route
-					path='/login'
+					path='/'
 					element={<Login />}
 				/>
 				<Route
-					path='/'
+					path='/dashboard'
 					element={<Dashboard />}
 				/>
 				<Route

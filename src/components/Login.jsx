@@ -3,15 +3,18 @@ import { useState, useEffect } from 'react';
 import { auth, provider } from '../config';
 import { signInWithPopup } from 'firebase/auth';
 import Dashboard from './Dashboard';
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 // import Purpose from './Purpose'
 
 function Login() {
 	const [value, setValue] = useState('');
+	const [name, setName] = useState('');
 	const handleClick = () => {
 		signInWithPopup(auth, provider).then((data) => {
+			console.log(data.user);
 			setValue(data.user.email);
 			localStorage.setItem('email', data.user.email);
+			setName(data.user.displayName);
 		});
 	};
 	useEffect(() => {
@@ -20,7 +23,7 @@ function Login() {
 	return (
 		<div>
 			{value ? (
-				<Link to='/dashboard'>{<Dashboard/>}</Link>
+				<Dashboard name={name}/>
 			) : (
 				<div className="bg-[url('/assets/signup-bg.svg')] h-screen flex items-center justify-center">
 					<div className='flex items-center justify-center  bg-white rounded-tr-3xl rounded-bl-3xl h-5/6'>
@@ -33,12 +36,17 @@ function Login() {
 							/>
 							<div className='flex flex-col items-center p-2 space-y-2'>
 								<h1 className='font-semibold text-3xl'>Welcome!</h1>
-								<p className='text-sm text-slate-500'>Login To Your Account</p>
+								<div className='flex items-center justify-center space-x-2'>
+									<div className='bg-slate-200 w-16 h-0.5'></div>
+									<p className='text-sm text-slate-500'>
+										Login To Your Account
+									</p>
+									<div className='bg-slate-200 w-16 h-0.5'></div>
+								</div>
 							</div>
 							<form
 								action=''
 								className='flex flex-col pt-16'>
-								
 								<input
 									type='email'
 									placeholder='Email-id'
@@ -49,7 +57,7 @@ function Login() {
 									placeholder='Password'
 									className='border border-gray-200 rounded p-2 m-1'
 								/>
-								
+
 								<button className='bg-[#1F64FF] rounded text-white font-semibold py-2 m-1 '>
 									SIGN UP
 								</button>
@@ -82,7 +90,8 @@ function Login() {
 								<button className='text-sm text-[#1F64FF]'> SIGNUP </button>
 							</div>
 						</div>
-						<div className='flex flex-col items-center justify-center p-3 h-full border-l-2 relative'>
+						<div className='bg-slate-200 w-0.5 h-3/4'></div>
+						<div className='flex flex-col items-center justify-center p-3 h-full relative'>
 							<img
 								src='/assets/signup-image.svg'
 								alt=''

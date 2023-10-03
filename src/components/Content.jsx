@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Card from './Card';
 // import awsLogo from '../assets/awsLogo.svg';
 import { useEffect, useState } from 'react';
@@ -74,7 +75,7 @@ const cardData = [
 	},
 ];
 
-function Content() {
+function Content(props) {
 	const [progress, setProgress] = useState(0);
 	useEffect(() => {
 		setTimeout(() => {
@@ -93,7 +94,7 @@ function Content() {
 		<div className='bg-white rounded-3xl p-3 flex-1 mx-5 mb-5'>
 			<div className='flex justify-between shadow-lg m-4 p-2 rounded-2xl bg-gradient-to-t from-[#F6FAFF]'>
 				<div className='welcome-message'>
-					<h1 className='text-5xl p-3'>Hii Arya!!</h1>
+					<h1 className='text-5xl p-3'>Hii {props.name}!!</h1>
 					<p className='text-lg p-3'>Welcome to Xerocodee ecosystem 😎</p>
 				</div>
 				<div className='flex space-x-1'>
