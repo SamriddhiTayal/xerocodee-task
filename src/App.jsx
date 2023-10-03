@@ -1,5 +1,5 @@
 // import { useState } from 'react';
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 // import Header from './components/Header';
 // import List from './components/List';
@@ -7,18 +7,18 @@ import './App.css';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
-import Purpose from './components/Purpose'
+import Purpose from './components/Purpose';
 
 function App() {
 	return (
 		<div>
 			<Routes>
 				<Route
-					path='/'
+					path='/login'
 					element={<Login />}
 				/>
 				<Route
-					path='/dashboard'
+					path='/'
 					element={<Dashboard />}
 				/>
 				<Route
@@ -30,10 +30,6 @@ function App() {
 					element={<Purpose />}
 				/>
 			</Routes>
-			{/* <Dashboard/> */}
-			{/* <Signup/> */}
-			{/* <Login/> */}
-			{/* <Purpose/> */}
 		</div>
 	);
 }
