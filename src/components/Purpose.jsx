@@ -1,9 +1,9 @@
-function Purpose(){
-  return (
-		<div className="bg-[url('../../public/assets/signup-bg.svg')] h-screen flex items-center justify-center">
+function Purpose() {
+	return (
+		<div className="bg-[url('/assets/signup-bg.svg')] h-screen flex items-center justify-center">
 			<div className='flex flex-col items-center   bg-white rounded-3xl h-3/4 w-9/12'>
 				<img
-					src='../../public/assets/logo4.png'
+					src='/assets/logo4.png'
 					alt=''
 					className='py-3'
 				/>
@@ -37,6 +37,5 @@ function Purpose(){
 			</div>
 		</div>
 	);
-
 }
 export default Purpose;

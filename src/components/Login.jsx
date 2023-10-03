@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { auth, provider } from '../config';
 import { signInWithPopup } from 'firebase/auth';
 import Dashboard from './Dashboard';
+import {Link} from 'react-router-dom'
 // import Purpose from './Purpose'
 
 function Login() {
@@ -19,7 +20,7 @@ function Login() {
 	return (
 		<div>
 			{value ? (
-				<Dashboard />
+				<Link to='/dashboard'>{<Dashboard/>}</Link>
 			) : (
 				<div className="bg-[url('/assets/signup-bg.svg')] h-screen flex items-center justify-center">
 					<div className='flex items-center justify-center  bg-white rounded-tr-3xl rounded-bl-3xl h-5/6'>

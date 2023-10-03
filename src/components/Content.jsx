@@ -4,13 +4,13 @@ import { useEffect, useState } from 'react';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import '../index.css';
- 
+
 import ToggleButton from './ToggleButton';
 import ActiveCard from './ActiveCard';
 const cardData = [
 	{
 		title: 'AWS',
-		logo: '../../public/assets/awsLogo.svg',
+		logo: '/assets/awsLogo.svg',
 		id: '0',
 		color: 'bg-[#FFF5E5]',
 		strokeColor: 'border-[#FFDFA2]',
@@ -18,7 +18,7 @@ const cardData = [
 	},
 	{
 		title: 'GCP',
-		logo: '../../public/assets/gcpLogo.svg',
+		logo: '/assets/gcpLogo.svg',
 		id: '1',
 		color: 'bg-[#ECF3FE]',
 		strokeColor: 'border-[#4192FF]',
@@ -26,7 +26,7 @@ const cardData = [
 	},
 	{
 		title: 'Github',
-		logo: '../../public/assets/githubLogo.svg',
+		logo: '/assets/githubLogo.svg',
 		id: '2',
 		color: 'bg-[#E9E9E9]',
 		strokeColor: 'border-[#C0C0C0]',
@@ -34,7 +34,7 @@ const cardData = [
 	},
 	{
 		title: 'Gitlab',
-		logo: '../../public/assets/gitlabLogo.svg',
+		logo: '/assets/gitlabLogo.svg',
 		id: '3',
 		color: 'bg-[#FCECEA]',
 		strokeColor: 'border-[#F77556]',
@@ -42,7 +42,7 @@ const cardData = [
 	},
 	{
 		title: 'Bitbucket',
-		logo: '../../public/assets/bitbucketLogo.svg',
+		logo: '/assets/bitbucketLogo.svg',
 		id: '4',
 		color: 'bg-[#E0ECFF]',
 		strokeColor: 'border-[#4192FF]',
@@ -50,7 +50,7 @@ const cardData = [
 	},
 	{
 		title: 'MongoDB',
-		logo: '../../public/assets/mongodblogo.svg',
+		logo: '/assets/mongodblogo.svg',
 		id: '5',
 		color: 'bg-[#EDF5ED]',
 		strokeColor: 'border-[#34A853]',
@@ -58,7 +58,7 @@ const cardData = [
 	},
 	{
 		title: 'RedisDB',
-		logo: '../../public/assets/redisLogo.svg',
+		logo: '/assets/redisLogo.svg',
 		id: '6',
 		color: 'bg-[#FBEAE9]',
 		strokeColor: 'border-[#F77556]',
@@ -66,7 +66,7 @@ const cardData = [
 	},
 	{
 		title: 'Postgresql',
-		logo: '../../public/assets/postgresqlLogo.svg',
+		logo: '/assets/postgresqlLogo.svg',
 		id: '7',
 		color: 'bg-[#EBF0F4]',
 		strokeColor: 'border-[#64BAFF]',
@@ -106,7 +106,7 @@ function Content() {
 				<div className='flex'>
 					<img
 						width={45}
-						src='../../public/assets/steps.svg'
+						src='/assets/steps.svg'
 						alt='steps image'
 					/>
 					<div className='steps-container flex-col space-y-4 pl-5'>
@@ -188,7 +188,7 @@ function Content() {
 					{activeTab.map((tab, index) => {
 						return (
 							<div key={index}>
-								<ActiveCard tab={tab}/>
+								<ActiveCard tab={tab} />
 							</div>
 						);
 					})}

@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
-function ActiveCard(props){
-  const tab = props.tab;
-  console.log(tab);
-  return (
+function ActiveCard(props) {
+	const tab = props.tab;
+	console.log(tab);
+	return (
 		<div className='m-1 '>
-			<p className='text-[#797979] text-xs font-semibold m-1'>Step {tab.step}</p>
+			<p className='text-[#797979] text-xs font-semibold m-1'>
+				Step {tab.step}
+			</p>
 			<div
 				className={`${tab.color} rounded-xl border ${tab.strokeColor} px-3 flex items-center`}>
 				<div className='flex flex-col px-3'>
@@ -23,7 +25,7 @@ function ActiveCard(props){
 					/>
 				</div>
 				<img
-					src='../../public/assets/grey-dots.svg'
+					src='/assets/grey-dots.svg'
 					alt='dots'
 					className='h-6'
 				/>

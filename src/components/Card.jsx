@@ -33,10 +33,10 @@ function Card(props) {
 			data-logo={cardData.logo}
 			data-color={cardData.color}
 			data-stroke={cardData.strokeColor}>
-			<div className="flex flex-col justify-between">
+			<div className='flex flex-col justify-between'>
 				<h1 className='font-semibold'>{props.cardData.title}</h1>
 				<img
-					src='../../public/assets/three-dots.svg'
+					src='/assets/three-dots.svg'
 					alt='dots'
 					className='w-8'
 				/>

@@ -6,57 +6,57 @@ function List() {
 		{
 			title: 'XeroCodee',
 			id: '0',
-			logo: '../../public/assets/xerocode-logo.svg',
+			logo: '/assets/xerocode-logo.svg',
 		},
 		{
 			title: 'Builder Center',
 			id: '1',
-			logo: '../../public/assets/builder-center-logo.svg',
+			logo: '/assets/builder-center-logo.svg',
 		},
 		{
 			title: 'Servive Board',
 			id: '2',
-			logo: '../../public/assets/service-board-logo.svg',
+			logo: '/assets/service-board-logo.svg',
 		},
 		{
 			title: 'Clusters',
 			id: '3',
-			logo: '../../public/assets/clusters-logo.svg',
+			logo: '/assets/clusters-logo.svg',
 		},
 		{
 			title: 'Databases',
 			id: '4',
-			logo: '../../public/assets/database-logo.svg',
+			logo: '/assets/database-logo.svg',
 		},
 		{
 			title: 'Environment',
 			id: '5',
-			logo: '../../public/assets/environment-logo.svg',
+			logo: '/assets/environment-logo.svg',
 		},
 		{
 			title: 'Workflow',
 			id: '6',
-			logo: '../../public/assets/workflow-logo.svg',
+			logo: '/assets/workflow-logo.svg',
 		},
 		{
 			title: 'Monitoring',
 			id: '7',
-			logo: '../../public/assets/monitoring-logo.svg',
+			logo: '/assets/monitoring-logo.svg',
 		},
 		{
 			title: 'Security',
 			id: '8',
-			logo: '../../public/assets/security-logo.svg',
+			logo: '/assets/security-logo.svg',
 		},
 		{
 			title: 'Web Hooks',
 			id: '9',
-			logo: '../../public/assets/web-hooks-logo.svg',
+			logo: '/assets/web-hooks-logo.svg',
 		},
 		{
 			title: 'Log Error',
 			id: '10',
-			logo: '../../public/assets/log-error-logo.svg',
+			logo: '/assets/log-error-logo.svg',
 		},
 	];
 

@@ -1,10 +1,10 @@
 function Signup() {
 	return (
-		<div className="bg-[url('../../public/assets/signup-bg.svg')] h-screen flex items-center justify-center">
+		<div className="bg-[url('/assets/signup-bg.svg')] h-screen flex items-center justify-center">
 			<div className='flex items-center justify-center  bg-white rounded-tr-3xl rounded-bl-3xl h-5/6'>
 				<div className='form-container flex flex-col justify-center items-center p-8'>
 					<img
-						src='../../public/assets/logo4.png'
+						src='/assets/logo4.png'
 						alt=''
 						width={160}
 						className='pb-4'
@@ -52,14 +52,14 @@ function Signup() {
 						<button className='text-sm text-slate-500 border border-[#C0C0C0] rounded flex items-center p-1 mr-1'>
 							<p>Sign Up With Google </p>
 							<img
-								src='../../public/assets/google-logo.svg'
+								src='/assets/google-logo.svg'
 								alt=''
 							/>
 						</button>
 						<button className='text-sm text-slate-500 border border-[#C0C0C0] rounded flex items-center p-1 ml-1'>
 							<p>Sign Up With Github</p>
 							<img
-								src='../../public/assets/github-logo.svg'
+								src='/assets/github-logo.svg'
 								alt=''
 							/>
 						</button>
@@ -71,13 +71,13 @@ function Signup() {
 				</div>
 				<div className='flex flex-col items-center justify-center p-3 h-full border-l-2 relative'>
 					<img
-						src='../../public/assets/signup-image.svg'
+						src='/assets/signup-image.svg'
 						alt=''
 						width={400}
 						className=''
 					/>
 					<img
-						src='../../public/assets/signup-wave.svg'
+						src='/assets/signup-wave.svg'
 						alt=''
 						width={400}
 						className='absolute bottom-0 right-0'
