@@ -1,0 +1,18 @@
+line- div with bg 
+
+remove git origin 
+signin with github
+react router 
+v6 
+/-login 
+data comes = forward 
+not- alert 
+name , email , phone number , image - store local storage 
+redirect to /onboarding 
+store the state - final onject of relevant fields 
+onsubmit - to /dashboard 
+dashboard - customised 
+/login type /dashboard - not work 
+/onboarding second time 
+/logeed in - direct dashboard 
+/logout - /login to logout 
