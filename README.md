@@ -44,13 +44,13 @@ Currently, routing between the login page and the dashboard is set up.
 In the future, I will update and implement routes for additional pages and features for additional pages.
 
 ## Additional Pages
-I can access other pages of the application directly using the following URLs:
+You can access other pages of the application directly using the following URLs:
 
-Signup Page: https://xerocodee-task.netlify.app/signup
-Dashboard: https://xerocodee-task.netlify.app/dashboard
-Onboarding Forms:
-1. Purpose: https://xerocodee-task.netlify.app/purpose (Choosing an option on the Purpose page will open the relevant form accordingly.)
-2. Deployment: https://xerocodee-task.netlify.app/deployment
+1. Signup Page: https://xerocodee-task.netlify.app/signup
+2. Dashboard: https://xerocodee-task.netlify.app/dashboard
+3. Onboarding Forms:
+A.Purpose: https://xerocodee-task.netlify.app/purpose (Choosing an option on the Purpose page will open the relevant form accordingly.)
+B. Deployment: https://xerocodee-task.netlify.app/deployment
 
 
 ## Persistent User Data
