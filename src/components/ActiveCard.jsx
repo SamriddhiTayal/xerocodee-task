@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 function ActiveCard(props) {
 	const tab = props.tab;
-	console.log(tab);
+	// console.log(tab);
 	return (
 		<div className='m-1 '>
 			<p className='text-[#797979] text-xs font-semibold m-1'>

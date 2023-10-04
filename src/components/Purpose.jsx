@@ -21,21 +21,21 @@ function Purpose() {
 				</div>
 				<div className='flex justify-around w-full pt-16'>
 					<button
-						className='border border-[#C0C0C0] rounded text-[#000022] font-semibold text-base px-16 py-3'
+						className='border border-[#C0C0C0] rounded text-[#000022] font-semibold text-base px-16 py-3 hover:bg-[#1F64FF] hover:text-[#fff]'
 						onClick={() => {
-							setPlaceholder('');
+							setPlaceholder('Your');
 						}}>
 						Developer
 					</button>
 					<button
-						className='border border-[#C0C0C0] rounded text-[#000022] font-semibold text-base px-16 py-3'
+						className='border border-[#C0C0C0] rounded text-[#000022] font-semibold text-base px-16 py-3 hover:bg-[#1F64FF] hover:text-[#fff]'
 						onClick={() => {
 							setPlaceholder('Organisation');
 						}}>
 						Organisation
 					</button>
 					<button
-						className='border border-[#C0C0C0] rounded text-[#000022] font-semibold text-base px-16 py-3'
+						className='border border-[#C0C0C0] rounded text-[#000022] font-semibold text-base px-16 py-3 hover:bg-[#1F64FF] hover:text-[#fff]'
 						onClick={() => {
 							setPlaceholder('Company');
 						}}>

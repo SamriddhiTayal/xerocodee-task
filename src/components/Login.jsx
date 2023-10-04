@@ -11,7 +11,7 @@ function Login() {
 	const [name, setName] = useState('');
 	const handleClick = () => {
 		signInWithPopup(auth, provider).then((data) => {
-			console.log(data.user);
+			// console.log(data.user);
 			setValue(data.user.email);
 			localStorage.setItem('email', data.user.email);
 			setName(data.user.displayName);

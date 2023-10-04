@@ -8,7 +8,7 @@ import Signup from './components/Signup';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import Purpose from './components/Purpose';
-
+import Deployment from './components/Deployment';
 function App() {
 	return (
 		<div>
@@ -28,6 +28,10 @@ function App() {
 				<Route
 					path='/purpose'
 					element={<Purpose />}
+				/>
+				<Route
+					path='/deployment'
+					element={<Deployment />}
 				/>
 			</Routes>
 		</div>
